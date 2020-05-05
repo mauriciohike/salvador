@@ -7,10 +7,10 @@ let initialArg: any = {
 
 const VehiclesContext = createContext(initialArg)
 
-const VehiclesProvider = (props: any) => {
+const VehiclesProvider: React.FC = ({children}) => {
   const [vehicleState, dispatch] = useReducer(vehicleReducer, initialArg)
 
-  return <VehiclesContext.Provider value={{ vehicleState, dispatch }}>{props.children}</VehiclesContext.Provider>
+  return <VehiclesContext.Provider value={{ vehicleState, dispatch }}>{children}</VehiclesContext.Provider>
 }
 
 export default VehiclesProvider
