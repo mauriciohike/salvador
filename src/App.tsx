@@ -11,12 +11,14 @@ import StoreWrapper from './store'
 
 function App() {
   return (
-  <Foundation
-    routes={Routes}
-    menus={menus}
-    store={StoreWrapper}
-    layout="Horizontal"
-  />)
+    // <h1>Teste sem foundation</h1>
+    <Foundation
+      routes={Routes}
+      menus={menus}
+      store={StoreWrapper}
+      layout="Horizontal"
+    />
+  )
 }
 
 export default App

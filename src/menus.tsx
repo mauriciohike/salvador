@@ -9,8 +9,8 @@ const menus = {
           to: "/dashboards/frete",
           children: [
             {
-              title: "DEUSES",
-              to: "/dashboards/frete/deuses",
+              title: "Rastreio",
+              to: "/dashboards/frete/rastreio",
               children: [],
             },
           ],
